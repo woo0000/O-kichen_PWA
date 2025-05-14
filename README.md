@@ -1,11 +1,11 @@
 ## 오뚜기 모바일 앱 프로젝트
 
 모바일 친화적인 UI를 제공하는 오뚜기 웹앱 프로젝트입니다. <br>
-Swiper.js를 활용한 슬라이더 구현과 반응형 메뉴 UI, Google Maps API를 연동하여 지점 정보를 제공합니다.
-PWA 빌더(https://www.pwabuilder.com/)를 이용하여 PWA와 연동까지 진행하였습니다.
+Swiper.js를 활용한 슬라이더 구현과 반응형 메뉴 UI, Google Maps API를 연동하여 지점 정보를 제공합니다. <br>
+PWA 빌더(https://www.pwabuilder.com/)를 이용하여 PWA와 연동까지 진행하였습니다. <br>
 (*PWA이란 모바일 기기에서 네이티브 앱과 같은 사용자 경험을 제공하는 웹 앱입니다.)
 
-<img src="images/ss0.jpg" width="300px" alt="모바일 메뉴 상호작용">
+<img src="images/ss0.jpg" width="100px" alt="모바일 메뉴 상호작용">
 
 <br/>
 
