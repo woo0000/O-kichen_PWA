@@ -78,16 +78,16 @@ closeBtn.addEventListener("click", function(e){
 <img src="images/ss2.jpg" width="300px" alt="모바일 메뉴 상호작용">
 
 ```javascript
-new Swiper("#main_slider .swiper-container", {
-  navigation: {
-    prevEl: "#main_slider .swiper-button-prev",
-    nextEl: "#main_slider .swiper-button-next"
-  },
-  pagination: {
-    el: "#main_slider .swiper-pagination",
-    type: "fraction"
-  }
-});
+	const mainSwiper=new Swiper("#main_slider .swiper-container", {
+		navigation: {
+			prevEl: "#main_slider .swiper-button-prev",
+			nextEl: "#main_slider .swiper-button-next"
+		},
+		pagination: {
+			el: "#main_slider .swiper-pagination",
+			type: "fraction"
+		}
+	});
 ```
 
 ---
@@ -100,16 +100,16 @@ new Swiper("#main_slider .swiper-container", {
 <img src="images/ss3.jpg" alt="추천레시피 - 서브 슬라이더">
 
 ```javascript
-new Swiper("#sub_slider .swiper-container", {
-  slidesPerView: 1.5,
-  spaceBetween: 10,
-  breakpoints: {
-    640: {
-      slidesPerView: 3.5,
-      spaceBetween: 5
-    }
-  }
-});
+	const subSwiper=new Swiper("#sub_slider .swiper-container", {
+		slidesPerView: 1.5,
+		spaceBetween: 10,
+		breakpoints: {
+			640: {
+				slidesPerView: 3.5,
+				spaceBetween: 5
+			}
+		}
+	});
 ```
 
 ---
@@ -122,10 +122,22 @@ new Swiper("#sub_slider .swiper-container", {
 <img src="images/ss4.jpg" alt="구글 맵 API">
 
 ```javascript
-let myLatLng = { lat: 37.3901, lng: 126.9715 };
-let map = new google.maps.Map(document.getElementById("map"), {
-  center: myLatLng,
-  zoom: 16,
-  ...
-});
+function initMap(){
+	let myLatLng={lat: 37.390141551118695, lng: 126.97151846772532};
+
+	let map=new google.maps.Map(document.getElementById("map"), {
+		center: myLatLng,
+		zoom: 16,
+		mapTypeControl: false,
+		zoomControl: false,
+		fullscreenControl: false,
+		rotateControl: false
+	});
+
+	let marker=new google.maps.Marker({
+		position: myLatLng,
+		map: map,
+		title: "(주)오뚜기"
+	});
+}
 ```
